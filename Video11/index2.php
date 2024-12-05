@@ -1,7 +1,8 @@
 <?php
 require 'functions.php';
-$mahasiswa = query ("SELECT * FROM mahasiswa");
+$mahasiswa = query("SELECT * FROM mahasiswa");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,33 +16,31 @@ $mahasiswa = query ("SELECT * FROM mahasiswa");
 
 <table border="1" cellpadding="10" cellspacing="0">
 
-    <tr>
-        <th>No.</th>
-        <th>Aksi</th>
-        <th>Gambar</th>
-        <th>TL</th>
-        <th>Nama</th>
-        <th>Email</th>
-        <th>Jurusan</th>
-    </tr>
+<tr>
+    <th>No.</th>
+    <th>Aksi</th>
+    <th>Gambar</th>
+    <th>TL</th>
+    <th>Nama</th>
+    <th>Email</th>
+    <th>Jurusan</th>
+</tr>
 
     <?php $i = 1; ?>
 <?php foreach( $mahasiswa as $row ) : ?>
     <tr>
         <td><?php echo $i; ?></td>
         <td>
-            <a href="">ubah</a> |
-            <a href="">hapus</a>
+            <a href="">ubah 1 hapus</a>
         </td>
-        <td><img src="img/<?php echo $row["gambar"]; ?>" width="50"></td>
-        <td><?php echo $row["TL"]; ?></td>
-        <td><?php echo $row["nama"]; ?></td>
-        <td><?php echo $row["email"]; ?></td>
-        <td><?php echo $row["jurusan"]; ?></td>
+        <td><img src="img/<?= $row["gambar"]; ?>" width="50"></td>
+        <td><?= $row["nrp"]; ?></td>
+        <td><?= $row["nama"]; ?></td>
+        <td><?= $row["email"]; ?></td>
+        <td><?= $row["jurusan"]; ?></td>
     </tr>
     <?php $i++; ?>
 <?php endforeach; ?>
-
 
 </table>
 

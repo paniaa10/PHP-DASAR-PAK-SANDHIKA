@@ -7,15 +7,17 @@ $mahasiswa = [
     "email" => "faniariski315@gmail.com",
     "jurusan" => "Jurusan RPL"
     ],
+    [
     "nama" => "Aldy",
     "TL" => "10062008",
     "email" => "Renaldy10@gmail.com",
     "jurusan" => "Jurusan TKR",
     "tugas" => ["90,80,100"]
+    ]
 ];
 //cara melihat
-// echo $mahasiswa [1],["email"]; (tidak ada array tugas)
+//echo $mahasiswa [1],["email"]; (tidak ada array tugas)
 
 //cara 2
-echo $mahasiswa[1]["tugas"][1];
+echo "Nama Mahasiswa 1: " . $mahasiswa[0]["nama"] . "<br>";
 ?>

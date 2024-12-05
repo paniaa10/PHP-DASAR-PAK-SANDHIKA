@@ -9,5 +9,5 @@ $mahasiswa = [
     "jurusan" => "Jurusan RPL"
 ];
 //cara menmpilkan
-//echo $mahasiswa["nama"];
+echo $mahasiswa["nama"];
 ?>

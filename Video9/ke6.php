@@ -6,13 +6,17 @@ $mahasiswa = [
     "nama" => "Fania",
     "TL" => "10112007",
     "email" => "faniariski315@gmail.com",
-    "jurusan" => "Jurusan RPL"
+    "jurusan" => "RPL",
+    "gambar" => "1.jpg"
     ],
+    [
     "nama" => "Aldy",
     "TL" => "10062008",
     "email" => "Renaldy10@gmail.com",
-    "jurusan" => "Jurusan TKR",
-    "tugas" => ["90,80,100"]
+    "jurusan" => "TKR",
+    "tugas" => ["90,80,100"],
+    "gambar" => "2.jpg"
+    ]
 ];
 ?>
 
@@ -27,8 +31,8 @@ $mahasiswa = [
     <h1>Daftar Mahasiswa</h1>
     <?php foreach ($mahasiswa as $mhs): ?>
         <ul>
-            <li><img src="img/<php echo $mhs["gambar"]; ?></li>
-            <li><php echo $mhs["nama"]; ?></li>
+        <li><img src="img/<?php echo $mhs["gambar"]; ?>" </li>
+            <li><?php echo $mhs["nama"]; ?></li>
             <li><?php echo $mhs["TL"]; ?></li>
         </ul>
     <?php endforeach; ?>

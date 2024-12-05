@@ -5,12 +5,14 @@ $mahasiswa = [
     "nama" => "Fania",
     "TL" => "10112007",
     "email" => "faniariski315@gmail.com",
-    "jurusan" => "Jurusan RPL"
+    "jurusan" => "RPL"
     ],
+    [
     "nama" => "Aldy",
     "TL" => "10062008",
     "email" => "Renaldy10@gmail.com",
-    "jurusan" => "Jurusan TKR",
+    "jurusan" => "TKR",
+    ]
 ];
 //kerennya jika kita mengetiknya ketukar tidak masalah, asal key-nya benar
 ?>
